@@ -1,0 +1,22 @@
+{
+  "name": "maraudesv1",
+  "version": "0.0.1",
+  "description": "Projet de site web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raphhu/maraudesV1.git"
+  },
+  "author": "Super Team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raphhu/maraudesV1/issues"
+  },
+  "homepage": "https://github.com/raphhu/maraudesV1#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
