@@ -9,6 +9,6 @@ app.set('view engine', 'handlebars');
 app.use(express.static('client'));
 
 
-app.listen(3000, function () {
-  console.log('Example app listening on port 3000!')
+app.listen(7777, function () {
+  console.log('Example app listening on port 7777!')
 })
