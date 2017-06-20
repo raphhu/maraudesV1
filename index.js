@@ -28,7 +28,9 @@ app.use(bodyParser.json());
         console.log(req.body);
         maraudescontact.insert({
             date : new Date(),
-            playerName : document.getElementById ("Name")
+
+
+            playerName:"Marianne"
         }, function(){
             res.send('created');
         });
