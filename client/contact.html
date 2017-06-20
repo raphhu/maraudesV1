@@ -111,24 +111,24 @@
                     <form role="form" action="/contact/new/" method="post">
                         <div class="row">
                             <div class="form-group col-lg-4">
-                                <label id="name">Nom</label>
-                                <input type="text" class="form-control">
+                                <label>Nom</label>
+                                <input type="text" class="form-control" id="name">
                             </div>
                             <div class="form-group col-lg-4">
-                                <label id="Email">Adresse email</label>
-                                <input type="email" class="form-control">
+                                <label>Adresse email</label>
+                                <input type="text" class="form-control" id="email">
                             </div>
                             <div class="form-group col-lg-4">
-                                <label id="Tel">Numéro de téléphone</label>
-                                <input type="tel" class="form-control">
+                                <label>Numéro de téléphone</label>
+                                <input type="text" class="form-control" id="tel">
                             </div>
                             <div class="clearfix"></div>
                             <div class="form-group col-lg-12">
-                                <label id="Message">Message</label>
+                                <label>Message</label>
                                 <textarea class="form-control" rows="6"></textarea>
                             </div>
                             <div class="form-group col-lg-12">
-                                <input type="hidden" name="save" value="contact">
+                                <input type="hidden" name="save" value="contact" id="message">
                                 <button type="submit" class="btn btn-default">C'est parti</button>
                             </div>
                         </div>
