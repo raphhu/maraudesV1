@@ -10,6 +10,7 @@ MongoClient.connect(url, function(err, db) {
 console.log("Connected result", err);
 
     var maraudescontact = db.collection("maraudes-contact");
+    db.maraudes-contact.insert(name : document.getElementById('name')
 
     var app = express();
 
@@ -28,7 +29,7 @@ app.use(bodyParser.json());
         console.log(req.body);
         maraudescontact.insert({
             date : new Date(),
-            playerName : new document.getElementById('name')
+            playerName : "Raph",
 
         }, function(){
             res.send('created');
