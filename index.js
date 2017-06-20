@@ -28,16 +28,15 @@ app.use(bodyParser.json());
      app.post('/contact/new/', function (req, res) {
         console.log(req.body);
         var data ={
-    name : req.body.contactname,
-    email: req.body.contactemail
+    name : req.body.name,
+    email : req.body.email,
+    tel : req.body.tel,
+    message : req.body.message,
         }
     
-        maraudescontact.insert({
-            date : new Date(),
-            playerName : name
-
-        }, function(){
-            res.send('created');
+        maraudescontact.insert(data
+    , function(){
+            res.redirect('/submitted.html');
         });
     });
 
