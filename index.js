@@ -3,6 +3,10 @@ var exphbs  = require('express-handlebars');
 var bodyParser = require('body-parser')
 var MongoClient = require('mongodb').MongoClient;
 var url = 'mongodb://essec:cergyisc00l@138.68.110.210:27017/admin';
+var data ={
+    name : req.body.contactname,
+    email: req.body.contactemail
+}
 
 
 
@@ -29,7 +33,7 @@ app.use(bodyParser.json());
     
         maraudescontact.insert({
             date : new Date(),
-            playerName : req.body.contactname()
+            playerName : name
 
         }, function(){
             res.send('created');
