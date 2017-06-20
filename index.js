@@ -26,10 +26,10 @@ app.use(bodyParser.json());
 
      app.post('/contact/new/', function (req, res) {
         console.log(req.body);
-        req.body.contactname;
+    
         maraudescontact.insert({
             date : new Date(),
-            playerName : "Raph",
+            playerName : req.body.contactname()
 
         }, function(){
             res.send('created');
