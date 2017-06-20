@@ -30,7 +30,7 @@ app.use(bodyParser.json());
             date : new Date(),
             playerName:"Christophe"
         }, function(){
-            res.send('created');
+            res.send('Merci pour votre inscription');
         });
     });
 
