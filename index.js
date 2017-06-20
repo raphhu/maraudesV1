@@ -28,8 +28,7 @@ app.use(bodyParser.json());
         console.log(req.body);
         maraudescontact.insert({
             date : new Date(),
-            playerName : "Raph"
-            email : "raph@essec.edu"
+            playerName : new document.getElementById('name')
 
         }, function(){
             res.send('created');
